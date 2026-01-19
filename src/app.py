@@ -43,13 +43,6 @@ root_agent = Agent(
     tools=[google_search],
 )
 
-root_agent = Agent(
-    name="helpful_assistant",
-    model=Gemini(
-    ),
-    # resto igual...
-)
-
 
 logger.debug("✅ Root Agent defined.")
 
