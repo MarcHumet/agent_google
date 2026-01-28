@@ -28,7 +28,7 @@ from google.adk.tools import google_search
 
 root_agent = Agent(
     name="helpful_assistant",
-    model=Gemini(model="gemini-2.5-flash-lite-preview-09-2025"),  # Tu modelo correcto  # ✅ 15 RPM gratis
+    model=Gemini(model="gemini-2.5-flash-lite-preview-09-2025"),  # Tu modelo correcto  # LIMITES de RPM, ✅ 15 RPM gratis ver limites en https://aistudio.google.com/usage?
     description="A simple agent that can answer general questions.",
     instruction="You are a helpful assistant. Use Google Search for current info.",
     tools=[google_search],
@@ -38,8 +38,6 @@ logger.debug("✅ Root Agent defined.")
 # No Funcionan
 # ✅ gemini-2.0-flash-lite-001
 # ✅ gemini-2.0-flash-lite
-# ✅ gemini-2.0-flash-lite-preview-02-05
-# ✅ gemini-2.0-flash-lite-preview
 
 
 #Modelos testeados que funcionan con ASK modalidad gratuita:
@@ -48,6 +46,11 @@ logger.debug("✅ Root Agent defined.")
 # ✅ gemini-2.5-flash-lite
 # ✅ gemini-2.5-flash
 # ✅ gemini-2.5-flash-lite-preview-09-2025
+
+# Modelos no testeados
+
+# ✅ gemini-2.0-flash-lite-preview-02-05
+# ✅ gemini-2.0-flash-lite-preview
 ```
 
  linux, ir a la carpetaque contiene el archivo agent.yaml
